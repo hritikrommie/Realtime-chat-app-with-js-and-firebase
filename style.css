@@ -1,0 +1,203 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.head{
+    width: 99%;
+    margin: 0 auto;
+    background: rgb(108, 172, 108);
+    text-align: center;
+    border: 1px solid  rgb(108, 172, 108);
+    box-shadow: 0px 0px 36px 15px rgba(0, 0, 0, 0.4);
+}
+.head h1{
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-size:2rem ;
+}
+.chat-rooms{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.chat-rooms h4{
+    margin: 0;
+}
+.btn{
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    width: 15%;
+    height: 35px;
+    border-radius: 10px;
+    background: rgb(205, 211, 208);
+    cursor: pointer;
+}
+.btn:hover{
+    color:rgb(11, 146, 11) ;
+    background: white;
+    box-shadow: 0px 0px 36px 15px rgba(0, 0, 0, 0.11);
+}
+.btn:focus{
+    outline: none !important;
+}
+.container{
+    width: 61%;
+    text-align: center;
+    margin: 10px auto;
+    height: 82%;
+    background: url('bg.jpg');
+    border-radius: 10px;
+    position: relative;
+ }
+.chat{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 37px;
+    bottom: 92px;
+    padding-top: 100px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+li{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.main-list{
+    list-style-type: none;
+    background: rgb(179, 230, 179);
+    width: fit-content;
+}
+.list-name{
+    text-align: left;
+    font-weight: bold;
+}
+.list-date{
+    color: rgba(43, 46, 45, 0.5);
+    text-align: right;
+}
+.list-message{
+    text-align: left;
+}
+.adding-name{
+    background:  rgb(179, 230, 179);
+    list-style-type: none;
+    width: fit-content;
+    margin: 0 auto;
+}
+.adding-name span{
+    font-weight: bold;
+}
+.curr-room{
+    height: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    background: rgba(205, 211, 208,.96);/*/make it .96 */
+}
+.curr-room p{
+    font-size: 1.2rem;
+    color:  rgb(31, 65, 31);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.menu{
+    display: none;
+}
+.menu p{
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: rgb(205, 211, 208);
+}
+.content{
+    position: relative;
+    display: none;
+    margin-top: 5px;
+    background: rgb(108, 172, 108);
+    
+}
+.menu:hover .content{
+    display: block;
+}
+.send-options{
+    background: rgba(205, 211, 208,.9);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 36px 15px rgba(0, 0, 0, 0.11);
+}
+
+.fill-form #btn, .send-name #btn{
+    width: 60px;
+    margin: 0 auto;
+    float: right;
+    border: none;
+    height: 31px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.fill-form #btn:hover,.send-name #btn:hover{
+    background: rgb(108, 172, 108);
+    color: white;
+    box-shadow: 0px 0px 36px 15px rgba(0, 0, 0, 0.11);
+}
+.fill-form #btn:focus,.send-name #btn:focus{
+    outline: none !important;
+}
+#send{
+    margin-bottom: 3px;
+}
+input{
+    float: left;
+    margin: 0;
+    width: 80%;
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+}
+input:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 768px){
+    .btn{
+        width: 23%;
+    }
+    .container{
+        width: 99%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .menu{
+        display: block;
+        margin-bottom: 5px;
+    }
+    .btn{
+        width: 80%;
+        margin-top: 5px;
+    }
+    .chat-rooms{
+        display: none;
+    }
+    .container{
+        width: 99%;
+    }
+}
