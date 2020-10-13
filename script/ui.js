@@ -6,10 +6,11 @@ class chatui{
         this.list.innerHTML = ''
     }
     render(data){
-        const tyme = dateFns.distanceInWordsToNow(
-            data.created_at.toDate()
-            ,{addSuffix:true}
-        );
+        // const tyme = dateFns.distanceInWordsToNow(
+        //     data.created_at.toDate()
+        //     ,{addSuffix:true}
+        // );
+        const tyme = data.created_at.toDate().toDateString();
         const html =
         `
         <li class ="main-list">
