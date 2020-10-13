@@ -89,7 +89,7 @@ li{
     background:  rgb(179, 230, 179);
     list-style-type: none;
     width: fit-content;
-    margin: 0 auto;
+    margin: 5px auto;
 }
 .adding-name span{
     font-weight: bold;
